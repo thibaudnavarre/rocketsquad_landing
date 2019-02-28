@@ -21,6 +21,9 @@ header {
   font-weight: 300;
 }
 
+.nav-link{
+  /*color: #FFFFFFd9 !important;*/
+}
 .logo-short{
   height: 12rem;
   animation: liftoff 1.0s forwards;
@@ -32,6 +35,9 @@ img.logo-short{
   right: 15%;
   bottom: -50px;
 }
+.logo-typo{
+  height: 5vh;
+}
 
 @media screen and (max-width: 736px){
   img.logo-short{
@@ -39,7 +45,11 @@ img.logo-short{
     right: 5%;
     height: 6rem;;
   }
+  .logo-typo{
+    height: 4vh;
+  }
 }
+
 
 section {
   padding: 150px 0;
