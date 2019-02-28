@@ -7,7 +7,7 @@
 
  @font-face {
   font-family: "Brown";
-  src: url("css/fonts/brown-regular.ttf");
+  src: url("fonts/brown-regular.ttf");
 }
   
   
@@ -16,36 +16,37 @@
 }
 
 header {
-  padding: 154px 0 100px;
+  padding: 30vh 0 100px;
   height: 100vh;
   font-weight: 300;
 }
 
-@media (min-width: 992px) {
-  header {
-    padding: 156px 0 100px;
-
-  }
+.logo-short{
+  height: 12rem;
+  animation: liftoff 1.0s forwards;
+  -webkit-animation: liftoff 1.0s forwards;
 }
 
-.logo{
-  transform: rotate(-45deg);
-  height: 10rem;
-}
-
-img.logo{
+img.logo-short{
   position: absolute;
   right: 15%;
+  bottom: -50px;
 }
 
-@media screen and (max-width: 680px){
-  img.logo{
+@media screen and (max-width: 736px){
+  img.logo-short{
+    height: 10rem;
     right: 5%;
+    height: 6rem;;
   }
 }
 
 section {
   padding: 150px 0;
+}
+
+footer{
+  height: 50vh;;
 }
 
 .bg-black{
@@ -54,4 +55,9 @@ section {
 
 .bg-white{
   background-color: #FFF;
+}
+
+@keyframes liftoff {
+  0%{transform: translate(0, 0px);}
+  100% {transform: translate(0, -50vh)}
 }
