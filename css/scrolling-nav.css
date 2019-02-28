@@ -4,16 +4,54 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
  */
 
+
+ @font-face {
+  font-family: "Brown";
+  src: url("css/fonts/brown-regular.ttf");
+}
+  
+  
+*{
+  font-family: 'Brown', sans-serif;
+}
+
 header {
   padding: 154px 0 100px;
+  height: 100vh;
+  font-weight: 300;
 }
 
 @media (min-width: 992px) {
   header {
     padding: 156px 0 100px;
+
+  }
+}
+
+.logo{
+  transform: rotate(-45deg);
+  height: 10rem;
+}
+
+img.logo{
+  position: absolute;
+  right: 15%;
+}
+
+@media screen and (max-width: 680px){
+  img.logo{
+    right: 5%;
   }
 }
 
 section {
   padding: 150px 0;
+}
+
+.bg-black{
+  background-color: #000;
+}
+
+.bg-white{
+  background-color: #FFF;
 }
