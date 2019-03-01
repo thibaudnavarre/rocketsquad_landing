@@ -19,35 +19,73 @@ header {
   padding: 30vh 0 100px;
   height: 100vh;
   font-weight: 300;
+  overflow: hidden;
 }
 
-.nav-link{
-  /*color: #FFFFFFd9 !important;*/
+nav{
+  width: 100vw;
 }
-.logo-short{
-  height: 12rem;
+
+nav, section, header, footer{
+  min-width: 320px;
+}
+
+.graphics{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 25%;
+  bottom: -100%;
   animation: liftoff 1.0s forwards;
   -webkit-animation: liftoff 1.0s forwards;
 }
-
-img.logo-short{
-  position: absolute;
-  right: 15%;
-  bottom: -50px;
+.rocket{
+  height: 168px;
+  width: 168px;
+  
 }
+
 .logo-typo{
   height: 5vh;
 }
 
-@media screen and (max-width: 736px){
-  img.logo-short{
-    height: 10rem;
+@keyframes liftoff {
+  0%{bottom: -100%;}
+  100% {bottom: -10%}
+}
+
+@media screen and (max-width: 992px){
+  img.rocket{
+    height: 142px;;
+    width: 142px;
+  }
+  .graphics{
     right: 5%;
-    height: 6rem;;
+  }
+  @keyframes liftoff {
+    0%{bottom: -100%;}
+    100% {bottom: -15%}
+  }
+}
+
+@media screen and (max-width: 768px){
+  img.rocket{
+    height: 118px;;
+    width: 118px;
+  }
+  .graphics{
+    right: 5%;
   }
   .logo-typo{
-    height: 4vh;
+    height: 3rem;
   }
+  @keyframes liftoff {
+    0%{bottom: -100%;}
+    100% {bottom: -20%}
+  }
+  
 }
 
 
@@ -67,7 +105,3 @@ footer{
   background-color: #FFF;
 }
 
-@keyframes liftoff {
-  0%{transform: translate(0, 0px);}
-  100% {transform: translate(0, -50vh)}
-}
