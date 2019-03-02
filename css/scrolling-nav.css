@@ -16,10 +16,14 @@
 }
 
 header {
-  padding: 30vh 0 100px;
+  padding: 30vh 0 0px;
   height: 100vh;
   font-weight: 300;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 0px;
 }
 
 nav{
@@ -35,16 +39,23 @@ nav, section, header, footer{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-left: 60%;
   position: relative;
-  left: 25%;
-  bottom: -100%;
-  animation: liftoff 1.0s forwards;
-  -webkit-animation: liftoff 1.0s forwards;
+  top: 3vh;
+  animation-timing-function: cubic-bezier(0.66,-0.04, 0.87, 0.52);
+  animation: liftoff 1.5s forwards;
+  -webkit-animation: liftoff 1.5s forwards;
 }
+
 .rocket{
   height: 168px;
   width: 168px;
   
+}
+
+.clouds{
+  margin-top: -100px;
+  margin-right: 100px;
 }
 
 .logo-typo{
@@ -52,10 +63,11 @@ nav, section, header, footer{
 }
 
 @keyframes liftoff {
-  0%{bottom: -100%;}
-  100% {bottom: -10%}
+  0%{margin-top: 55%}
+  100% {margin-top: 0%;}
 }
 
+/* Media queries for tablets*/
 @media screen and (max-width: 992px){
   img.rocket{
     height: 142px;;
@@ -64,12 +76,13 @@ nav, section, header, footer{
   .graphics{
     right: 5%;
   }
-  @keyframes liftoff {
+  /*@keyframes liftoff {
     0%{bottom: -100%;}
     100% {bottom: -15%}
-  }
+  }*/
 }
 
+/* Media queries for mobile*/
 @media screen and (max-width: 768px){
   img.rocket{
     height: 118px;;
@@ -81,10 +94,10 @@ nav, section, header, footer{
   .logo-typo{
     height: 3rem;
   }
-  @keyframes liftoff {
+  /*@keyframes liftoff {
     0%{bottom: -100%;}
     100% {bottom: -20%}
-  }
+  }*/
   
 }
 
