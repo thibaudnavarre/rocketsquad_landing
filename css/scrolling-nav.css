@@ -18,6 +18,7 @@
 header {
   padding: 30vh 0 0px;
   height: 100vh;
+  min-height: 550px;
   font-weight: 300;
   overflow: hidden;
   display: flex;
@@ -40,22 +41,34 @@ nav, section, header, footer{
   justify-content: center;
   align-items: center;
   margin-left: 60%;
+  margin-top: 120%;
   position: relative;
   top: 3vh;
-  animation-timing-function: cubic-bezier(0.66,-0.04, 0.87, 0.52);
+  
+  
   animation: liftoff 1.5s forwards;
   -webkit-animation: liftoff 1.5s forwards;
+  /*animation-timing-function: cubic-bezier(0.66,-0.04, 0.87, 0.52);*/
+  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
 }
 
 .rocket{
-  height: 168px;
-  width: 168px;
-  
+  height: 130px;
+  width: 130px;
+  position: relative;
+  top: -20px;
 }
 
+.trail{
+  position: relative;
+  top: -20px;
+  
+}
 .clouds{
   margin-top: -100px;
   margin-right: 100px;
+  position: relative;
 }
 
 .logo-typo{
@@ -70,23 +83,26 @@ nav, section, header, footer{
 /* Media queries for tablets*/
 @media screen and (max-width: 992px){
   img.rocket{
-    height: 142px;;
-    width: 142px;
+    height: 120px;;
+    width: 120px;
   }
   .graphics{
     right: 5%;
   }
-  /*@keyframes liftoff {
-    0%{bottom: -100%;}
-    100% {bottom: -15%}
-  }*/
+  @keyframes liftoff {
+    0%{margin-top: 55%}
+    100% {margin-top: 0%;}
+  }
 }
 
 /* Media queries for mobile*/
 @media screen and (max-width: 768px){
+  h2{
+    font-size: 1.5rem;
+  }
   img.rocket{
-    height: 118px;;
-    width: 118px;
+    height: 110px;
+    width: 110px;
   }
   .graphics{
     right: 5%;
@@ -94,10 +110,10 @@ nav, section, header, footer{
   .logo-typo{
     height: 3rem;
   }
-  /*@keyframes liftoff {
-    0%{bottom: -100%;}
-    100% {bottom: -20%}
-  }*/
+  @keyframes liftoff {
+    0%{margin-top: 100%}
+    100% {margin-top: 0%;}
+  }
   
 }
 
