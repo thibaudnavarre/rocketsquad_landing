@@ -26,4 +26,21 @@
     offset: 54
   });
 
+  var i = 0;
+  var speed = 50;
+  var txt = 'Boost your development.<Launch your ideas.';
+  var outputText = ''
+  $('document').ready(function typeWriter() {
+    if (i < txt.length && txt.charAt(i)!='<') {
+      outputText += txt.charAt(i);
+      $('.typewritten').html(outputText);
+      i++;      
+      setTimeout(typeWriter, speed);
+    } else if (i < txt.length){
+      outputText += '<br>';
+      $('.typewritten').html(outputText);
+      i++;      
+      setTimeout(typeWriter, speed);
+    }
+  })
 })(jQuery); // End of use strict
