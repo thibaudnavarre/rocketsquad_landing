@@ -35,6 +35,10 @@ nav, section, header, footer{
   min-width: 320px;
 }
 
+i{
+  color: #F5A623;
+  font-style: normal;
+}
 .graphics{
   display: flex;
   flex-direction: column;
@@ -75,6 +79,24 @@ nav, section, header, footer{
   height: 5vh;
 }
 
+.team-member{
+  margin-bottom: 1.5rem;
+  padding: 10px;
+}
+
+.team-member p {
+  color: #FFF;
+  text-align: center;
+  margin-top: 1rem;
+}
+.team-member img {
+  display: block;
+  margin: auto;
+}
+.astronaut{
+  width: 50%;
+
+}
 @keyframes liftoff {
   0%{margin-top: 55%}
   100% {margin-top: 0%;}
@@ -92,6 +114,9 @@ nav, section, header, footer{
   @keyframes liftoff {
     0%{margin-top: 55%}
     100% {margin-top: 0%;}
+  }
+  .team-member p{
+    font-size: 0.8rem;
   }
 }
 
@@ -115,11 +140,16 @@ nav, section, header, footer{
     100% {margin-top: 0%;}
   }
   
+  
 }
 
 
 section {
-  padding: 150px 0;
+  padding: 75px 0;
+}
+
+section h2{
+  margin-bottom: 1.5rem;
 }
 
 footer{
