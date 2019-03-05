@@ -53,8 +53,8 @@ i{
   animation: liftoff 1.5s forwards;
   -webkit-animation: liftoff 1.5s forwards;
   /*animation-timing-function: cubic-bezier(0.66,-0.04, 0.87, 0.52);*/
-  animation-delay: 2s;
-  -webkit-animation-delay: 2s;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
 }
 
 .rocket{
@@ -148,9 +148,37 @@ section {
   padding: 75px 0;
 }
 
+#missions {
+  min-height: 100vh;
+}
+
+#missions div.row{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+#missions button{
+  background-color: #F5A623;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 8px;;
+}
+
+.mission{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.planet{
+  width: 120px;
+  margin-bottom: 2rem;
+}
+
 section h2{
   margin-bottom: 1.5rem;
 }
+
 
 footer{
   height: 50vh;;

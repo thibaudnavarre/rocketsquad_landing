@@ -27,7 +27,7 @@
   });
 
   var i = 0;
-  var speed = 50;
+  var speed = 25;
   var txt = 'Boost your development.<Launch your ideas.';
   var outputText = ''
   $('document').ready(function typeWriter() {
