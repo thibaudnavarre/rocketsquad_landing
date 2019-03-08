@@ -152,10 +152,11 @@ section {
   min-height: 100vh;
 }
 
-#missions div.row{
+#missions-row {
   display: flex;
   justify-content: space-between;
   text-align: center;
+  align-items: center;
 }
 
 #missions button{
@@ -192,3 +193,21 @@ footer{
   background-color: #FFF;
 }
 
+.english-flag {
+  margin: -2.5px 0px 0px 0px;
+  height: 25px;
+}
+
+b {
+  font-weight: 900;
+}
+
+.lead b {
+  color: white;
+} 
+
+canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
