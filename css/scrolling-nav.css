@@ -189,6 +189,12 @@ footer{
   height: 50vh;;
 }
 
+footer img{
+  height: 68px;
+}
+footer a:hover{
+  color: #F5A623;
+}
 .bg-black{
   background-color: #000;
 }
