@@ -161,13 +161,17 @@ section {
   align-items: center;
 }
 
-#missions button{
+#missions a{
+  color: #000;
   background-color: #F5A623;
   border: none;
   border-radius: 4px;
-  padding: 6px 8px;;
+  padding: 10px 16px;;
 }
 
+#missions a:hover{
+  text-decoration: none;
+}
 .mission{
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -187,6 +191,12 @@ footer{
   height: 50vh;;
 }
 
+footer img{
+  height: 68px;
+}
+footer a:hover{
+  color: #F5A623;
+}
 .bg-black{
   background-color: #000;
 }
