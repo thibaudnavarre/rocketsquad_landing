@@ -134,6 +134,3 @@ window.onresize = function () {
     halfw = canvas.width / 2;
     halfh = canvas.height / 2;
 };
-
-
-

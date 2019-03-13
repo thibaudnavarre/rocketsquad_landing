@@ -164,20 +164,20 @@
                 <p>Pour mener à bien vos projets nous avons recruté les meilleurs développeurs pour vous garantir
                   efficacité et
                   résultat.</p>
-                <a href="#contact">Engager la squad</a>
+                <a href="#contact" class="spaceButton">Engager la squad</a>
               </div>
               <div class="col-12 col-md-4 mission">
                 <img src="./assets/images/planet_2.png" alt="Planet Image" class="planet">
                 <h3>Agile Launcher</h3>
                 <p>Nous avons accompagnons lors de vos transformations agiles grâce à des ateliers de coaching et un
                   suivi régulier.</p>
-                <a href="#contact">Engager un pilote Agile</a>
+                <a href="#contact" class="spaceButton">Engager un pilote Agile</a>
               </div>
               <div class="col-12 col-md-4 mission">
                 <img src="./assets/images/planet_3.png" alt="Planet Image" class="planet">
                 <h3>Startup Launcher</h3>
-                <p>Nous accompagnons des startups dans la mise en place de leurs projets techniques.</p>
-                <a href="#contact">Décoller</a>
+                <p>Nous accompagnons quotidiennement des startups dans la mise en place de leurs projets techniques.</p>
+                <a href="#contact" class="spaceButton">Décoller</a>
               </div>
             </div>
           </div>
@@ -202,10 +202,11 @@
             <h2>Squad</h2>
           </div>
         </div>
-        <div class="container ">
+        <div class="container">
           <div class="row">
-            <div class="team-member col-md-4 col-12">
+            <div class="team-member col-md-4 col-12 animatedHelmetVisor1">
               <img src="./assets/images/astronaut_1.png" alt="Team member image" class="astronaut">
+              <img src="./assets/images/visor.png" alt="Team member visor" class="visor" id="visor1">
               <p>
                 #1
                 <br>
@@ -216,8 +217,9 @@
                 <i>Duties:</i> UI/UX Excellence, Fast Delivery
               </p>
             </div>
-            <div class="team-member col-md-4 col-12">
+            <div class="team-member col-md-4 col-12 animatedHelmetVisor2">
               <img src="./assets/images/astronaut_2.png" alt="Team member image" class="astronaut">
+              <img src="./assets/images/visor.png" alt="Team member visor" class="visor" id="visor2">
               <p>
                 #2
                 <br>
@@ -228,8 +230,9 @@
                 <i>Duties:</i> Code Quality, Client Satisfaction
               </p>
             </div>
-            <div class="team-member col-md-4 col-12">
+            <div class="team-member col-md-4 col-12 animatedHelmetVisor3">
               <img src="./assets/images/astronaut_3.png" alt="Team member image" class="astronaut">
+              <img src="./assets/images/visor.png" alt="Team member visor" class="visor" id="visor3">
               <p>
                 #3
                 <br>
@@ -242,8 +245,9 @@
             </div>
           </div>
           <div class="row">
-            <div class="team-member offset-md-2 col-md-4 col-12">
+            <div class="team-member offset-md-2 col-md-4 col-12 animatedHelmetVisor4">
               <img src="./assets/images/astronaut_4.png" alt="Team member image" class="astronaut">
+              <img src="./assets/images/visor.png" alt="Team member visor" class="visor" id="visor4">
               <p>
                 #4
                 <br>
@@ -254,8 +258,9 @@
                 <i>Duties:</i> Security Guard, User Protection
               </p>
             </div>
-            <div class="team-member col-md-4 col-12">
+            <div class="team-member col-md-4 col-12 animatedHelmetVisor5">
               <img src="./assets/images/astronaut_5.png" alt="Team member image" class="astronaut">
+              <img src="./assets/images/visor.png" alt="Team member visor" class="visor" id="visor5">
               <p>
                 #5
                 <br>
@@ -315,18 +320,8 @@
     <script src="js/scrolling-nav.js"></script>
     <!-- Custom JavaScript for the space effect -->
     <script src="js/space.js"></script>
-
-  <script>
-    var test = document.getElementsByClassName('test');
-    for (let element of test) {
-    element.onmouseenter = function () {
-      document.getElementById('visiere2').style.clip="rect(0px,145px,0px,0px)";
-    }
-    element.onmouseleave = function () {
-      document.getElementById('visiere2').style.clip="rect(0px,1000px,110px,0px)";
-    }
-}
-  </script>
+    <!-- Custom JavaScript for the helmet animation -->
+    <script src="js/helmet.js"></script>
 
 </body>
 
