@@ -138,19 +138,19 @@
               <h3>Product Launcher</h3>
               <p>Pour mener à bien vos projets nous avons recruté les meilleurs développeurs pour vous garantir efficacité et
                 résultat.</p>
-                <button href="#">En savoir plus</button>
+                <button href="#" class="spaceButton">En savoir plus</button>
               </div>
               <div class="col-12 col-md-4 mission">
                 <img src="./assets/images/planet_2.png" alt="Planet Image" class="planet">
                 <h3>Agile Launcher</h3>
                 <p>Nous avons accompagnons lors de vos transformations agiles grâce à des ateliers de coaching et un suivi régulier.</p>
-                <button href="#">En savoir plus</button>
+                <button href="#" class="spaceButton">En savoir plus</button>
               </div>
               <div class="col-12 col-md-4 mission">
                 <img src="./assets/images/planet_3.png" alt="Planet Image" class="planet">
                 <h3>Startup Launcher</h3>
                 <p>Nous accompagnons des startups dans la mise en place de leurs projets techniques.</p>
-                <button>En savoir plus</button>
+                <button class="spaceButton">En savoir plus</button>
               </div>
             </div>
           </div>
@@ -197,8 +197,9 @@
               <i>Duties:</i> UI/UX Excellence, Fast Delivery
             </p>
           </div>
-          <div class="team-member col-md-4 col-12">
+          <div class="team-member col-md-4 col-12 test">
             <img src="./assets/images/astronaut_2.png" alt="Team member image" class="astronaut">
+            <img id="visiere2" class="animationTest" src="./assets/images/visiere.png">
             <p>
               #2
               <br>
@@ -285,6 +286,18 @@
   <script src="js/scrolling-nav.js"></script>
   <!-- Custom JavaScript for the space effect -->
   <script src="js/space.js"></script>
+
+  <script>
+    var test = document.getElementsByClassName('test');
+    for (let element of test) {
+    element.onmouseenter = function () {
+      document.getElementById('visiere2').style.clip="rect(0px,145px,0px,0px)";
+    }
+    element.onmouseleave = function () {
+      document.getElementById('visiere2').style.clip="rect(0px,1000px,110px,0px)";
+    }
+}
+  </script>
 
 </body>
 

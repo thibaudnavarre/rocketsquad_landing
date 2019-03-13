@@ -139,8 +139,10 @@ i{
     0%{margin-top: 100%}
     100% {margin-top: 0%;}
   }
-  
-  
+  #visiere2 {
+    position: absolute;
+    top: 14% !important;
+  }
 }
 
 
@@ -211,3 +213,12 @@ canvas {
   width: 100%;
   height: 100%;
 }
+
+#visiere2 {
+  -webkit-transition: all .6s ease-in-out;
+  position: absolute; 
+  top: 12%; 
+  left: 30.4%; 
+  width: 39%; 
+  clip: rect(0px,1000px,110px,0px);
+} 
