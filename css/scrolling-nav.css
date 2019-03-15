@@ -58,8 +58,8 @@ i{
 }
 
 .rocket{
-  height: 130px;
-  width: 130px;
+  height: 110px;
+  width: 110px;
   position: relative;
   top: -20px;
 }
@@ -228,8 +228,8 @@ canvas {
 /* Media queries for tablets*/
 @media screen and (max-width: 992px){
   img.rocket{
-    height: 120px;;
-    width: 120px;
+    height: 100px;;
+    width: 100px;
   }
   .graphics{
     right: 5%;
@@ -249,8 +249,8 @@ canvas {
     font-size: 1.5rem;
   }
   img.rocket{
-    height: 110px;
-    width: 110px;
+    height: 90px;
+    width: 90px;
   }
   .graphics{
     right: 5%;
